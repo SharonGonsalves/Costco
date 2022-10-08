@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="24" total="25" passed="0">
+<testng-results skipped="0" failed="1" ignored="25" total="26" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40238" started-at="2022-10-08T03:55:48Z" finished-at="2022-10-08T03:56:29Z">
+  <suite name="Default suite" duration-ms="20102" started-at="2022-10-08T17:46:29Z" finished-at="2022-10-08T17:46:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40238" started-at="2022-10-08T03:55:48Z" finished-at="2022-10-08T03:56:29Z">
+    <test name="Default test" duration-ms="20102" started-at="2022-10-08T17:46:29Z" finished-at="2022-10-08T17:46:49Z">
       <class name="com.costco.tests.TestClass">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.costco.tests.TestClass@5a63f509]" name="setUp" is-config="true" duration-ms="6532" started-at="2022-10-08T03:55:48Z" finished-at="2022-10-08T03:55:55Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.costco.tests.TestClass@5a63f509]" name="setUp" is-config="true" duration-ms="8040" started-at="2022-10-08T17:46:29Z" finished-at="2022-10-08T17:46:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="use_of_senKeys_method_then_click_submit_and_then_clear()[pri:0, instance:com.costco.tests.TestClass@5a63f509]" name="use_of_senKeys_method_then_click_submit_and_then_clear" duration-ms="33664" started-at="2022-10-08T03:55:55Z" finished-at="2022-10-08T03:56:28Z">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method status="FAIL" signature="dropdown_selectByIndex_method()[pri:0, instance:com.costco.tests.TestClass@5a63f509]" name="dropdown_selectByIndex_method" duration-ms="12022" started-at="2022-10-08T17:46:37Z" finished-at="2022-10-08T17:46:49Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element ([[ChromeDriver: chrome on MAC (ab00ec053e124bbe8c2ff32c156c3e82)] -> xpath: //input[@id='search-field' or name='keyword']]) to be selected (tried for 30 second(s) with 500 milliseconds interval)
+              <![CDATA[Unable to find element with locator By.id: //a[@id='navigation-dropdown']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'Braidens-MacBook-Pro.local', ip: '2601:86:300:4040:a409:ca65:17cd:7be2%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.1', java.version: '1.8.0_331'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/vx/5v7ncfwd7hn...}, goog:chromeOptions: {debuggerAddress: localhost:55847}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55847/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ab00ec053e124bbe8c2ff32c156c3e82]]>
+Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element ([[ChromeDriver: chrome on MAC (ab00ec053e124bbe8c2ff32c156c3e82)] -> xpath: //input[@id='search-field' or name='keyword']]) to be selected (tried for 30 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.id: //a[@id='navigation-dropdown']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'Braidens-MacBook-Pro.local', ip: '2601:86:300:4040:a409:ca65:17cd:7be2%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.1', java.version: '1.8.0_331'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: /var/folders/vx/5v7ncfwd7hn...}, goog:chromeOptions: {debuggerAddress: localhost:55847}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55847/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ab00ec053e124bbe8c2ff32c156c3e82
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at com.costco.tests.TestClass.use_of_senKeys_method_then_click_submit_and_then_clear(TestClass.java:142)
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at com.costco.tests.TestClass.dropdown_selectByIndex_method(TestClass.java:199)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -58,10 +58,10 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- use_of_senKeys_method_then_click_submit_and_then_clear -->
+        </test-method> <!-- dropdown_selectByIndex_method -->
       </class> <!-- com.costco.tests.TestClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

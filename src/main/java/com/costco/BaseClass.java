@@ -15,16 +15,19 @@ public class BaseClass {
 		//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/driver/chromedriver");
 		//driver = new ChromeDriver();
 		//System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"/driver/geckodriver");
-		
+		//System.setProperty("webdriver.chrome.driver","./driver/chromedriver.");
+		//driver =new ChromeDriver();
+		//new
 		//WebDriverManager.chromedriver().driverVersion().setup();
-		WebDriverManager.chromedriver().driverVersion("105.0.5195.125").setup();
-		// .driverVersion("105.0.5195.125")
 		//driver = new FirefoxDriver();
+		//new
+		WebDriverManager.chromedriver().driverVersion("105.0.5195.125").setup();
 		driver=new ChromeDriver();
+		//.driverVersion("105.0.5195.125")
 		// navigating the URL
 		driver.get("https://www.costco.com/");
 		driver.manage().window().maximize();
-		//driver.manage().window().fullscreen();
+		driver.manage().window().fullscreen();
 		driver.manage().deleteAllCookies();
 		//driver.get("https://portal.cms.gov/portal");
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));

@@ -8,6 +8,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import com.costco.BaseClass;
@@ -128,7 +129,7 @@ public void use_Of_Selected_mathod() {
     	
 }
    
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void use_of_senKeys_method_then_click_submit_and_then_clear() throws InterruptedException {
 		 
 	driver.findElement(By.xpath("//input[@id='search-field']")).sendKeys("TV");
@@ -193,5 +194,16 @@ public void use_Of_Selected_mathod() {
 
 
   }
+      //@Test(enabled = true)
+     // public void dropdown_selectByIndex_method () throws InterruptedException {
+     // WebElement dropElement =driver.findElement(By.id()));
+      //Select select = new Select (dropElement);
+      //select.selectByIndex(3);
+      //Thread.sleep(3000);
+      }
+      
+
+
+
 
 }
